@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>TD_TC-02_Navigate_to_System_Users</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>4284340e-edf2-40dc-ad27-66443204b81c</dataFileGUID>
+   <dataSourceUrl>C:\Users\user\Downloads\OrangeHRM_TechnicalTest_Azwina_MUF-20260722T053909Z-1-001\OrangeHRM_TechnicalTest_Azwina_MUF\Data\OpenHRM_Test Data.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>TC-02_navigate_system_users</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

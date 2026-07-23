@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-03_Verifikasi Elemen-Elemen UI pada Halaman System Users</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66df8328-0604-4b1b-9a24-8df8bffc858c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2a78db11-8340-47bd-a9aa-0bf6a152dcaa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b3551fd4-41a5-4344-bff4-a5822ed9263e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e6c9d644-db83-4154-83c0-a4768c20b961</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2a78db11-8340-47bd-a9aa-0bf6a152dcaa</id>
+      <masked>false</masked>
+      <name>element_name</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>b3551fd4-41a5-4344-bff4-a5822ed9263e</id>
+      <masked>false</masked>
+      <name>expected_visible</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>e6c9d644-db83-4154-83c0-a4768c20b961</id>
+      <masked>false</masked>
+      <name>expected_enabled</name>
+   </variable>
+</TestCaseEntity>

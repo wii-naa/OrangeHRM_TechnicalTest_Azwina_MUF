@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>dropdown</name>
+   <tag></tag>
+   <elementGuidId>9e5aaa20-1a0d-4c5e-8fb7-9557ff27cf8b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[normalize-space()='${label}']&#xd;
+/ancestor::div[contains(@class,'orangehrm-card-container')]&#xd;
+//label[normalize-space()='${dropdown}']&#xd;
+/following::div[contains(@class,'oxd-select-text')][1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

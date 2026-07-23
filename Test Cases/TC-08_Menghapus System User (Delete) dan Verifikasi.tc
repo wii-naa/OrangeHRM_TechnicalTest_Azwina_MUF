@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-08_Menghapus System User (Delete) dan Verifikasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20b8bd69-8ceb-4189-8b58-4f1bcc9c460c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a0b9d74d-2fd9-4d11-b1ea-c44d8ad503b7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a234246d-4b31-4fd8-ba10-b853d1eca977</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>faaad0c5-c45b-4e9f-bf8c-8d7fe0f70059</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a0b9d74d-2fd9-4d11-b1ea-c44d8ad503b7</id>
+      <masked>false</masked>
+      <name>target_username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a234246d-4b31-4fd8-ba10-b853d1eca977</id>
+      <masked>false</masked>
+      <name>expected_success_message</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>faaad0c5-c45b-4e9f-bf8c-8d7fe0f70059</id>
+      <masked>false</masked>
+      <name>expected_after_delete_message</name>
+   </variable>
+</TestCaseEntity>
