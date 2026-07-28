@@ -3,7 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -18,24 +19,22 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 TestData dataFiles = findTestData('Data Files/TD_TC-01_Login')
-int rows = dataFiles.getRowNumbers()
 
-
-for (int i=1; i<=rows; i++) {
-	println("i number= "+i)
-	String url = dataFiles.getObjectValue('url', i)
-	String username = dataFiles.getObjectValue('username', i)
-	String password = dataFiles.getValue("password", i)
-	//String expected_page_after_login = dataFiles.getValue('expected_page_after_login', i)
+String url = dataFiles.getValue('url', 1)
+String username = dataFiles.getValue('username', 1)
+String password = dataFiles.getValue('password', 1)
+String expected_page_after_login = dataFiles.getValue('expected_page_after_login', 1)
 	
-	WebUI.openBrowser(url)
-	WebUI.maximizeWindow()
-	WebUI.waitForElementVisible(findTestObject('Object Repository/Login_Page/input_username'), 15)
-	WebUI.setText(findTestObject('Object Repository/Login_Page/input_username'), username)
-	WebUI.setText(findTestObject('Object Repository/Login_Page/input_password'), password)
-	WebUI.click(findTestObject('Object Repository/Login_Page/button_Login'))
-	WebUI.waitForPageLoad(10)
-	//WebUI.verifyTextPresent(expected_page_after_login, true)
-	String path = ""
-	WebUI.takeScreenshot()
-}
+WebUI.openBrowser(url)
+WebUI.maximizeWindow()
+WebUI.waitForElementVisible(findTestObject('Object Repository/Login_Page/input_username'), 15)
+WebUI.setText(findTestObject('Object Repository/Login_Page/input_username'), username)
+WebUI.setText(findTestObject('Object Repository/Login_Page/input_password'), password)
+WebUI.click(findTestObject('Object Repository/Login_Page/button_Login'))
+WebUI.waitForPageLoad(10)
+WebUI.verifyTextPresent(expected_page_after_login, true)
+	
+String projectDir = RunConfiguration.getProjectDir()
+String path = projectDir + '/Screenshots/TC-01_Login.png'
+WebUI.takeScreenshot(path)
+
