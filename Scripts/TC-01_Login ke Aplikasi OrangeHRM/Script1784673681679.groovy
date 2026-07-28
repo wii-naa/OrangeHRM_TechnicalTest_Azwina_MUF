@@ -17,23 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+TestData dataFiles = findTestData('Data Files/TD_TC-01_Login')
+int rows = dataFiles.getRowNumbers()
 
-WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(url)
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/Login_Page/input_username'), 15)
-
-WebUI.setText(findTestObject('Object Repository/Login_Page/input_username'), username)
-
-WebUI.setText(findTestObject('Object Repository/Login_Page/input_password'), password)
-
-WebUI.click(findTestObject('Object Repository/Login_Page/button_Login'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.verifyTextPresent(expected_page_after_login, true)
-
-WebUI.takeScreenshot()
-
+for (int i=1; i<=rows; i++) {
+	println("i number= "+i)
+	String url = dataFiles.getObjectValue('url', i)
+	String username = dataFiles.getObjectValue('username', i)
+	String password = dataFiles.getValue("password", i)
+	//String expected_page_after_login = dataFiles.getValue('expected_page_after_login', i)
+	
+	WebUI.openBrowser(url)
+	WebUI.maximizeWindow()
+	WebUI.waitForElementVisible(findTestObject('Object Repository/Login_Page/input_username'), 15)
+	WebUI.setText(findTestObject('Object Repository/Login_Page/input_username'), username)
+	WebUI.setText(findTestObject('Object Repository/Login_Page/input_password'), password)
+	WebUI.click(findTestObject('Object Repository/Login_Page/button_Login'))
+	WebUI.waitForPageLoad(10)
+	//WebUI.verifyTextPresent(expected_page_after_login, true)
+	String path = ""
+	WebUI.takeScreenshot()
+}

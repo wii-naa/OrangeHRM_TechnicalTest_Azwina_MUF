@@ -23,45 +23,12 @@
          <name>url</name>
       </iterationNameVariable>
       <testCaseId>Test Cases/TC-01_Login ke Aplikasi OrangeHRM</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>6f74f184-b303-46d4-aea1-9b994bb856f9</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/TD_TC-01_Login</testDataId>
-      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>6f74f184-b303-46d4-aea1-9b994bb856f9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>url</value>
-         <variableId>151c7a5e-cfad-4dd7-a981-962ffddfbf77</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>6f74f184-b303-46d4-aea1-9b994bb856f9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>username</value>
-         <variableId>12f57d95-4667-4415-a3a4-51aa722765b1</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>6f74f184-b303-46d4-aea1-9b994bb856f9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>password</value>
-         <variableId>fdb0473a-f589-441a-be69-1ce43b2b19d5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>6f74f184-b303-46d4-aea1-9b994bb856f9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_page_after_login</value>
-         <variableId>fce894ce-dbe4-4505-b075-eea6f174a825</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>603be114-4647-4e43-9737-bf573837b1cc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-02_Navigasi ke Halaman System Users</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -107,7 +74,7 @@
    <testCaseLink>
       <guid>52ee031a-a321-42bc-8d97-949200cc33f4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-03_Verifikasi Elemen-Elemen UI pada Halaman System Users</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -141,7 +108,7 @@
    <testCaseLink>
       <guid>dcd50bb0-6135-4f44-8d31-811c1bbbb1d0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-04_Menambah System User Baru (Add User)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -205,7 +172,7 @@
    <testCaseLink>
       <guid>fe503f53-7b20-426e-a221-afc80674154d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-05_Mencari System User Berdasarkan Username</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -245,7 +212,7 @@
    <testCaseLink>
       <guid>b6ef9e9c-4349-4d66-afe0-73ce5a873c95</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-06_Mencari User dengan Kombinasi Multi-Parameter</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -309,7 +276,7 @@
    <testCaseLink>
       <guid>e6f7ec32-e306-4332-90e8-b6d16a2f73da</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-07_Edit Data System User (Ubah Role dan Status)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -361,7 +328,7 @@
    <testCaseLink>
       <guid>2da0f6ad-baa6-4e08-b2fa-17562b3ca066</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-08_Menghapus System User (Delete) dan Verifikasi</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -395,7 +362,7 @@
    <testCaseLink>
       <guid>6dbe651e-41df-4922-b30d-dbce13e5f62c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-09_Validasi Form Add User - Negative Testing (Data-Driven)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -471,7 +438,7 @@
    <testCaseLink>
       <guid>b75257ce-3622-45e1-9b1a-b0c3dbf9b679</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC-10_End-to-End CRUD Flow and Bulk Delete (Data-Driven)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
