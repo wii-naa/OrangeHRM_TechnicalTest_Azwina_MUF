@@ -28,48 +28,9 @@
    <testCaseLink>
       <guid>603be114-4647-4e43-9737-bf573837b1cc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC-02_Navigasi ke Halaman System Users</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>25982578-a468-4f69-b671-bc9fac9de68c</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/TD_TC-02_Navigate_to_System_Users</testDataId>
-      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>25982578-a468-4f69-b671-bc9fac9de68c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>admin_menu_label</value>
-         <variableId>88c1c0fa-0f97-42e1-b440-8197093c612c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>25982578-a468-4f69-b671-bc9fac9de68c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>user_management_label</value>
-         <variableId>809dbc2a-ff6a-41a1-aac3-5ed998fbae16</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>25982578-a468-4f69-b671-bc9fac9de68c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>users_label</value>
-         <variableId>7662666d-1fb5-4263-a033-ced204f2f967</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>25982578-a468-4f69-b671-bc9fac9de68c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_url_keyword</value>
-         <variableId>c53d0d94-c9ca-4708-89ab-a2a7c38409eb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>25982578-a468-4f69-b671-bc9fac9de68c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_page_header</value>
-         <variableId>7c4b4a90-a9f4-47ad-85ad-b62fecb5f058</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>52ee031a-a321-42bc-8d97-949200cc33f4</guid>
