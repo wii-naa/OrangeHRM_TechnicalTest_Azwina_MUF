@@ -35,100 +35,16 @@
    <testCaseLink>
       <guid>52ee031a-a321-42bc-8d97-949200cc33f4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC-03_Verifikasi Elemen-Elemen UI pada Halaman System Users</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>9c9e0304-b3dd-4c75-a118-a1f750b84d25</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/TD_TC-03_Validate Elements</testDataId>
-      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>9c9e0304-b3dd-4c75-a118-a1f750b84d25</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>element_name</value>
-         <variableId>2a78db11-8340-47bd-a9aa-0bf6a152dcaa</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9c9e0304-b3dd-4c75-a118-a1f750b84d25</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_visible</value>
-         <variableId>b3551fd4-41a5-4344-bff4-a5822ed9263e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9c9e0304-b3dd-4c75-a118-a1f750b84d25</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_enabled</value>
-         <variableId>e6c9d644-db83-4154-83c0-a4768c20b961</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>dcd50bb0-6135-4f44-8d31-811c1bbbb1d0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/TC-04_Menambah System User Baru (Add User)</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>ea070661-a54a-46bf-a56a-c65d37cd9309</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/TD_TC-04_Add User</testDataId>
-      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>user_role</value>
-         <variableId>9ee49e49-9115-4938-94a1-30c2f012bb3d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>employee_name</value>
-         <variableId>00d3b05b-ec66-41a5-8ccd-36309519a18a</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>username</value>
-         <variableId>275b1d69-4fb5-47c7-9e84-35ed687dfa02</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>status</value>
-         <variableId>e904b506-05dc-4800-937e-85edbb9ef794</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>password</value>
-         <variableId>d6e0e1b6-98af-4763-8b28-b20b73c759db</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>confirm_password</value>
-         <variableId>23af77d2-f4b7-46fa-a5ef-e996e57a6045</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>expected_success_message</value>
-         <variableId>6f8028f0-0223-4650-90d7-2a4d69c6cfe7</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>ea070661-a54a-46bf-a56a-c65d37cd9309</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>employee_keyword</value>
-         <variableId>0bbba5de-7f4b-4a22-9505-249c70c8a097</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>fe503f53-7b20-426e-a221-afc80674154d</guid>

@@ -18,23 +18,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+AdditionalKeywords keywords = new AdditionalKeywords()
+
 TestData dataFiles = findTestData('Data Files/TD_TC-02_Navigate_to_System_Users')
 
+//get column name
 String admin_menu_label = dataFiles.getValue('admin_menu_label', 1)
 String user_management_label = dataFiles.getValue('user_management_label', 1)
 String users_label = dataFiles.getValue('users_label', 1)
 String expected_url_keyword = dataFiles.getValue('expected_url_keyword', 1)
 String expected_page_header = dataFiles.getValue('expected_page_header', 1)
 
-
-WebUI.click(findTestObject('Object Repository/Menu/label_mainMenu', ['menuLabel':admin_menu_label]))
-WebUI.click(findTestObject('Object Repository/Menu/label_topbarMenu', ['menuLabel':user_management_label]))
-WebUI.click(findTestObject('Object Repository/Menu/label_dropdownMenu', ['menuLabel':users_label]))
+//use additional keywords
+keywords.waitForClick(findTestObject('Object Repository/Menu/label_mainMenu', ['menuLabel':admin_menu_label]))
+keywords.waitForClick(findTestObject('Object Repository/Menu/label_topbarMenu', ['menuLabel':user_management_label]))
+keywords.waitForClick(findTestObject('Object Repository/Menu/label_dropdownMenu', ['menuLabel':users_label]))
 
 String url = WebUI.getUrl()
 assert url.contains(expected_url_keyword)
-WebUI.verifyElementText(findTestObject('Object Repository/Menu/header_systemUser'), expected_page_header)
+
+keywords.waitVerifyElementText(findTestObject('Object Repository/Menu/header_systemUser'), expected_page_header)
 
 String projectDir = RunConfiguration.getProjectDir()
 String path = projectDir + '/Screenshots/TC-02_Navigate_to_System_Users.png'
 WebUI.takeScreenshot(path)
+

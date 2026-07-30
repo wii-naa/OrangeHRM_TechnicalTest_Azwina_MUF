@@ -14,12 +14,16 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.builtin.WaitForElementNotPresentKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+AdditionalKeywords keywords = new AdditionalKeywords()
+
 TestData dataFiles = findTestData('Data Files/TD_TC-01_Login')
 
+//get column name
 String url = dataFiles.getValue('url', 1)
 String username = dataFiles.getValue('username', 1)
 String password = dataFiles.getValue('password', 1)
@@ -27,12 +31,12 @@ String expected_page_after_login = dataFiles.getValue('expected_page_after_login
 	
 WebUI.openBrowser(url)
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/Login_Page/input_username'), 15)
-WebUI.setText(findTestObject('Object Repository/Login_Page/input_username'), username)
-WebUI.setText(findTestObject('Object Repository/Login_Page/input_password'), password)
-WebUI.click(findTestObject('Object Repository/Login_Page/button_Login'))
-WebUI.waitForPageLoad(10)
-WebUI.verifyTextPresent(expected_page_after_login, true)
+
+//use additional keywords
+keywords.waitForSetText(findTestObject('Object Repository/Login_Page/input_username'), username)
+keywords.waitForSetText(findTestObject('Object Repository/Login_Page/input_password'), password)
+keywords.waitForClick(findTestObject('Object Repository/Login_Page/button_Login'))
+keywords.waitVerifyTextPresent(expected_page_after_login)
 	
 String projectDir = RunConfiguration.getProjectDir()
 String path = projectDir + '/Screenshots/TC-01_Login.png'
